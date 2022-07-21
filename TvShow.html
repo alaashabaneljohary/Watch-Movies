@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <title>Watch movies</title>
+    <!-- Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Installation Icon Page-->
+    <link rel="shortcut icon" href="image/logo/logo@2x.png" type="image/x-icon">
+    <!-- Installation CSS File -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="bg-light">
+    <!-- Loading -->
+<div id="Loading">
+    <div class="spinner">
+        <div class="rect1"></div>
+        <div class="rect2"></div>
+        <div class="rect3"></div>
+        <div class="rect4"></div>
+        <div class="rect5"></div>
+    </div>
+</div>
+<!-- Start Section Header ================-->
+<main>
+ <header class="position-relative">
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="image/logo/logo@2x.png" class="" alt="">
+          </a>
+          <button class="btn btn-light d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+            <i class="fas fa-bars"></i>
+          </button>
+
+          <div class="offcanvas offcanvas-start d-lg-none" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+               Movies
+              </h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link text-dark border mb-2 bg-warning" aria-current="page" href="welcome.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-dark border mb-2 " href="#">Movies</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-dark border mb-2 bg-warning" href="TvShow.html">TV SHOWS</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-dark border mb-2 " href="#">AUDIOBOOKS</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-dark border mb-2 bg-warning" href="#">BLOG</a>
+                    </li>
+                  </ul>
+                  <form class="d-flex" role="search">
+                    <button class="btn btn-warning " type="submit">
+                      <a class="nav-link   text-dark" onclick="logout()" href="index.html">Logout</a>
+                    </button>
+                  </form>
+              </div>
+         </div>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="welcome.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Movies</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="TvShow.html">TV SHOWS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">AUDIOBOOKS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">BLOG</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <button class="btn btn-outline-success ms-5" type="submit">
+                <a class="nav-link btn  text-white" onclick="logout()" href="index.html">Logout</a>
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>  
+   <div class="slider">
+    <div class="container">
+        <h2>TV Shows</h2>
+            <p>Most popular TV Shows and serials here you can see it</p>
+    </div>
+   </div>
+ </header>   
+</main>
+<!-- End Section Header ==================-->   
+<!-- Start Section Main ==================-->
+<main class="py-5 mb-5" >
+ <section class="section-content">
+ <div class="container">
+    <div class="section-heading mb-4">
+        <span>ONLINE STREAMING</span>
+        <h2 class="ml6">
+  <span class="text-wrapper">
+    <span class="letters">Watch Shows Online</span>
+  </span>
+</h2>
+      </div>
+     <div class="row g-2">
+        <div class="col-md-3 ">
+           <div class="item">
+            <img src="image/category/tv-shows01.jpg" class="w-100" alt="">
+            <div class="itemCapition">
+                <span>Action</span>
+                <h4>Thinking You</h4>
+                <div class="d-flex">
+                  <a href="filmNumberOne.html"><i class="fas fa-video"></i></a>
+                 <h6 class="mt-2 ms-3"> 8 seasons - 2018</h6>
+                </div>
+               </div>
+        </div> 
+        </div>
+        <div class="col-md-3">
+            <div class="item">
+             <img src="image/category/tv-shows02.jpg" class="w-100" alt="">
+             <div class="itemCapition">
+                 <span>Action</span>
+                 <h4>Civil War</h4>
+                 <div class="d-flex">
+                   <a href="filmNumberTwo.html"><i class="fas fa-video"></i></a>
+                  <h6 class="mt-2 ms-3"> 5 seasons - 2017</h6>
+                 </div>
+                </div>
+         </div> 
+         </div>
+         <div class="col-md-3">
+            <div class="item">
+             <img src="image/category/tv-shows03.jpg" class="w-100" alt="">
+             <div class="itemCapition">
+                 <span>Action</span>
+                 <h4>Best Game</h4>
+                 <div class="d-flex">
+                   <a href="filmNumberThree.html"><i class="fas fa-video"></i></a>
+                  <h6 class="mt-2 ms-3"> 9 seasons - 2020</h6>
+                 </div>
+                </div>
+         </div> 
+         </div>
+         <div class="col-md-3">
+            <div class="item">
+             <img src="image/category/tv-shows04.jpg" class="w-100" alt="">
+             <div class="itemCapition">
+                 <span>Action</span>
+                 <h4>Antoshka</h4>
+                 <div class="d-flex">
+                   <a href="Antoshkafilm.html"><i class="fas fa-video"></i></a>
+                  <h6 class="mt-2 ms-3"> 5 seasons - 2017</h6>
+                 </div>
+                </div>
+         </div> 
+         </div>
+     </div>
+ </div>
+ </section>   
+</main>
+<!-- End Section Main ====================-->
+<!-- Start Section Footer ==========-->
+<footer class="pt-5">
+  <section class="container">
+   <div class="row pt-5">
+    <div class="col-md-6 col-lg-3">
+        <div class="textwidget custom-html-widget">
+            <h5 class="call-us">Questions? <strong>Call 0850-380-6444</strong></h5>
+            <p> Format for custom post types that are not book
+              or you can use else if to <u>specify a second</u> post type the
+              same way as above. </p>
+            <div class="language">
+              <select>
+                <option>English</option>
+                <option>Spanish</option>
+              </select>
+            </div>
+            <!-- end language --> 
+  </div>  
+    </div>
+    <div class="col-md-6 col-lg-3">
+        <div class="widget footer-widget">
+            <h6 class="widget-title">DIGIFLEX</h6>
+            <div class="menu-digiflex-container">
+            <ul  class="menu">
+            <li class="menu-item "><a href="#">Digiflex</a></li>
+            <li class="menu-item "><a href="#">Devices</a></li>
+            <li class="menu-item "><a href="#">Blog</a></li>
+            <li class="menu-item "><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    </div>
+    <div class="col-md-6 col-lg-3">
+        <div class="widget footer-widget">
+            <h6 class="widget-title">SUPPORT</h6>
+            <div class="menu-digiflex-container">
+            <ul  class="menu">
+            <li class="menu-item "><a href="#">FAQ</a></li>
+            <li class="menu-item "><a href="#">Help Center</a></li>
+            <li class="menu-item "><a href="#">Support </a></li>
+            <li class="menu-item "><a href="#">Account</a></li>
+            </ul>
+        </div>
+    </div>
+    </div>
+    <div class="col-md-6 col-lg-3">
+        <div class="widget footer-widget">
+            <h6 class="widget-title">POLICIES</h6>
+            <div class="menu-digiflex-container">
+            <ul  class="menu">
+            <li class="menu-item "><a href="#">Privacy Policy</a></li>
+            <li class="menu-item "><a href="#">Terms of Use</a></li>
+            <li class="menu-item "><a href="#">Legal Noticies </a></li>
+            </ul>
+        </div>
+    </div>
+    </div>
+   </div>
+  </section> 
+  <div class="bottom-bar">
+	<div class="container">
+         <span>© 2021 Digiflex | Online Movie Streaming</span> 
+			<span> Site created by Alaa Shaban</span> 
+		</div>
+	</div> 
+</footer>
+<!-- End Section Footer ============-->
+  <!-- Installation Script File -->
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/bootstrap.bundle.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/particles.js"></script>
+  <script src="js/particles.json"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+  <script src="js/main.js"></script>
+
+
+</body>
+</html>

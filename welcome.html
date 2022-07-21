@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <title>Watch movies</title>
+    <!-- Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Installation Icon Page-->
+    <link rel="shortcut icon" href="image/logo/logo@2x.png" type="image/x-icon">
+    <!-- Installation CSS File -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="bg-light">
+    <!-- Loading -->
+<div id="Loading">
+    <div class="spinner">
+        <div class="rect1"></div>
+        <div class="rect2"></div>
+        <div class="rect3"></div>
+        <div class="rect4"></div>
+        <div class="rect5"></div>
+    </div>
+</div>
+<!-- Start Section Header ================-->
+<main>
+ <header class="position-relative">
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="image/logo/logo@2x.png" class="" alt="">
+          </a>
+          <button class="btn btn-light d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+            <i class="fas fa-bars"></i>
+          </button>
+
+          <div class="offcanvas offcanvas-start d-lg-none" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+               Movies
+              </h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link text-dark border mb-2 bg-warning" aria-current="page" href="welcome.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-dark border mb-2 " href="#">Movies</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-dark border mb-2 bg-warning" href="TvShow.html">TV SHOWS</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-dark border mb-2 " href="#">AUDIOBOOKS</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-dark border mb-2 bg-warning" href="#">BLOG</a>
+                    </li>
+                  </ul>
+                  <form class="d-flex" role="search">
+                    <button class="btn btn-warning " type="submit">
+                      <a class="nav-link   text-dark" onclick="logout()" href="index.html">Logout</a>
+                    </button>
+                  </form>
+              </div>
+         </div>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="welcome.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Movies</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="TvShow.html">TV SHOWS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">AUDIOBOOKS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">BLOG</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <button class="btn btn-outline-success ms-5" type="submit">
+                <a class="nav-link btn  text-white" onclick="logout()" href="index.html">Logout</a>
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>  
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active carousel-bg1">
+            <div class="carousel-caption">
+                <h6 class="tagline"> NEW RELEASES</h6>
+               
+                <h2 class="ml2">Inside Women</h2>
+                <div class="features">
+                    <div class="rate me-2">
+                        <b>4.8</b> 
+                        <img src="image/logo/imdb-logo.svg" alt="IMDB"> Score 
+                    </div>
+                    <!-- end rate -->
+                    <div class="year me-3"> 2018  </div>
+                    <!-- end year -->
+                    <div class="quality"> 4K <b>Ultra HD</b></div>
+                    <!-- end quality -->
+                    <div class="range mx-2"> 1 hr 21 min</div>
+                    <!-- end range -->
+                    <div class="cc">CC</div>				                           
+                    <div class="category"> Action</div>
+                </div>
+                <p class="description d-none d-md-block">
+                    That is, until she plays her first game of chess. While working as a handyman in an old house, an ex-convict discovers countless horrors revolving around a town’s twisted secrets.
+                </p>
+                <a href="#" class="play-btn">DISCOVER NOW</a>
+              </div>
+          </div>
+          
+          <div class="carousel-item  carousel-bg2">
+            <div class="carousel-caption">
+                <h6 class="tagline"> NEW RELEASES</h6>
+                <h2 class="name">Future Hell</h2>
+                <div class="features">
+                    <div class="rate me-2">
+                        <b>7.8</b> 
+                        <img src="image/logo/imdb-logo.svg" alt="IMDB"> Score 
+                    </div>
+                    <!-- end rate -->
+                    <div class="year me-3"> 2019  </div>
+                    <!-- end year -->
+                    <div class="quality"> 4K <b>Ultra HD</b></div>
+                    <!-- end quality -->
+                    <div class="range mx-2"> 1 hr 21 min</div>
+                    <!-- end range -->
+                    <div class="cc">CC</div>				                           
+                    <div class="category"> Action</div>
+                </div>
+                <p class="description">
+                    Based on Edgar Allan Poe's classic bone-chilling tale, this bloody story will have you sleeping with the lights on for years to come. 
+                    Nine year-old orphan <strong>Beth Harmon</strong>  
+                 </p>
+                <a href="#" class="play-btn">DISCOVER NOW</a>
+            </div>
+          </div>
+          <div class="carousel-item  carousel-bg3">
+            <div class="carousel-caption">
+                <h6 class="tagline"> NEW RELEASES</h6>
+                <h2 class="name">Soviet : The Cold War</h2>
+                <div class="features">
+                    <div class="rate me-2">
+                        <b>7.8</b> 
+                        <img src="image/logo/imdb-logo.svg" alt="IMDB"> Score 
+                    </div>
+                    <!-- end rate -->
+                    <div class="year me-3"> 2022  </div>
+                    <!-- end year -->
+                    <div class="quality"> 4K <b>Ultra HD</b></div>
+                    <!-- end quality -->
+                    <div class="range mx-2"> 1 hr 21 min</div>
+                    <!-- end range -->
+                    <div class="cc">CC</div>				                           
+                    <div class="category"> Action</div>
+                </div>
+                <p class="description">
+                    Her senses grow sharper, her thinking clearer, and for the first time in her life she feels herself fully in control. By the <u>age of sixteen</u>, she's competing for the U.S.        </p>
+                <a href="#" class="play-btn">DISCOVER NOW</a>
+            </div>
+          </div>
+        </div>
+    </div>
+ </header>   
+</main>
+<!-- End Section Header ==================-->   
+<!-- Start Section Main ==================-->
+<main class="py-5" >
+ <section class="section-content">
+ <div class="container">
+    <div class="section-heading mb-4">
+        <span>ONLINE STREAMING</span>
+        <h2 class="ml6">
+  <span class="text-wrapper">
+    <span class="letters">Watch Shows Online</span>
+  </span>
+</h2>
+      </div>
+     <div class="row g-2">
+        <div class="col-md-3 ">
+           <div class="item">
+            <img src="image/category/tv-shows01.jpg" class="w-100" alt="">
+            <div class="itemCapition">
+                <span>Action</span>
+                <h4>Thinking You</h4>
+                <div class="d-flex">
+                  <a href="filmNumberOne.html"><i class="fas fa-video"></i></a>
+                 <h6 class="mt-2 ms-3"> 8 seasons - 2018</h6>
+                </div>
+               </div>
+        </div> 
+        </div>
+        <div class="col-md-3">
+            <div class="item">
+             <img src="image/category/tv-shows02.jpg" class="w-100" alt="">
+             <div class="itemCapition">
+                 <span>Action</span>
+                 <h4>Civil War</h4>
+                 <div class="d-flex">
+                   <a href="filmNumberTwo.html"><i class="fas fa-video"></i></a>
+                  <h6 class="mt-2 ms-3"> 5 seasons - 2017</h6>
+                 </div>
+                </div>
+         </div> 
+         </div>
+         <div class="col-md-3">
+            <div class="item">
+             <img src="image/category/tv-shows03.jpg" class="w-100" alt="">
+             <div class="itemCapition">
+                 <span>Action</span>
+                 <h4>Best Game</h4>
+                 <div class="d-flex">
+                   <a href="filmNumberThree.html"><i class="fas fa-video"></i></a>
+                  <h6 class="mt-2 ms-3"> 9 seasons - 2020</h6>
+                 </div>
+                </div>
+         </div> 
+         </div>
+         <div class="col-md-3">
+            <div class="item">
+             <img src="image/category/tv-shows04.jpg" class="w-100" alt="">
+             <div class="itemCapition">
+                 <span>Action</span>
+                 <h4>Antoshka</h4>
+                 <div class="d-flex">
+                   <a href="Antoshkafilm.html"><i class="fas fa-video"></i></a>
+                  <h6 class="mt-2 ms-3"> 5 seasons - 2017</h6>
+                 </div>
+                </div>
+         </div> 
+         </div>
+     </div>
+ </div>
+ </section>   
+</main>
+<!-- End Section Main ====================-->
+<!-- Start Section part-3 ================-->
+<main class="py-4">
+ <section class="section3">
+ <div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <img src="image/side-image/side-image01.png" class="w-100" alt="">
+        </div>
+        <div class="col-md-6">
+          <h6 class="fs-2 fw-bold py-5"> 
+         Best pick for hassle-free <strong class="text-decoration-underline">streaming</strong> experience.
+          </h6>  
+          <div class="row g-2">
+            <div class="col-3">
+                <img src="image/logo/icon01.png"  alt="" style="width: 40px; padding-top: 20px;">
+            </div>
+            <div class="col-9">
+                <h5> Access while traveling</h5>
+                <p>
+                    Keep access to your entertainment content while roaming the world.Pick from thousands.  
+                </p>
+            </div>
+            <div class="col-3">
+                <img src="image/logo/icon03.png" style="width: 40px;padding-top: 20px;"  alt="">
+            </div>
+            <div class="col-9">
+                <h5>Stay secure at all times </h5>
+                <p>
+                    Pause for snacks, not buffering. Stream smoothly with our lightning-fast NordLynx protocol network. 
+                </p>
+            </div>
+            <div class="col-3">
+                <img src="image/logo/icon02.png" style="width: 40px; padding-top: 20px;" alt="">
+            </div>
+            <div class="col-9">
+                <h5>Stay secure at all times</h5>
+                <p>
+                    Securely access and enjoy your favorite content, even on public Wi-Fi. Your connection
+                </p>
+            </div>
+          </div>
+        </div>
+      </div>
+ </div>
+ </section>
+</main>
+<!-- End Section Part-3===================-->
+<!-- Start Section Part-4=================-->
+<main class="py-4">
+<section class="container section4">
+ <div class="text-center mb-3 text-light">
+    <span>ONLINE STREAMING</span>
+    <h2 class="ml6">
+      <span class="text-wrapper">
+        <span class="letters">Watch Shows Online</span>
+      </span>
+    </h2>
+ </div>
+ <div class="owl-carousel">
+  <div>
+    <div class="itemImg">
+      <a href="FutureHell.html">  <img src="image/movies/movies35.jpg" class="w-100" alt=""></a>
+    </div>
+    <div class="details">
+        <div class="age">TV-G </div>
+       <div class="name">Action</div>
+       <h3>Future Hell</h3> 
+    </div>
+   </div>
+   <div>
+      <div class="itemImg">
+        <a href="SovietFilm.html">  <img src="image/movies/movies34.jpg" class="w-100" alt=""></a>
+      </div>
+      <div class="details">
+          <div class="age">TV-G </div>
+         <div class="name">War</div>
+         <h3>Soviet : The Cold War</h3> 
+      </div>
+     </div>
+     <div>
+      <div class="itemImg">
+        <a href="#">  <img src="image/movies/movies33.jpg" class="w-100" alt=""></a>
+      </div>
+      <div class="details ">
+          <div class="age ">TV-G </div>
+         <div class="name">Action</div>
+         <h3>  Inside Women </h3> 
+      </div>
+     </div>
+     <div>
+      <div class="itemImg">
+        <a href="#">  <img src="image/movies/movies32.jpg" class="w-100" alt=""></a>
+      </div>
+      <div class="details">
+          <div class="age">TV-G </div>
+         <div class="name">Thriller</div>
+         <h3> Spaceman </h3> 
+      </div>
+     </div>
+     <div>
+      <div class="itemImg">
+        <a href="#">  <img src="image/movies/movies31.jpg" class="w-100" alt=""></a>
+      </div>
+      <div class="details">
+          <div class="age">TV-G </div>
+         <div class="name">Sci Fi</div>
+         <h3>Voices</h3> 
+      </div>
+     </div>
+  
+     <div>
+      <div class="itemImg">
+        <a href="#">  <img src="image/movies/movies30.jpg" class="w-100" alt=""></a>
+      </div>
+      <div class="details">
+          <div class="age">TV-G </div>
+         <div class="name">Romance</div>
+         <h3> Colors of Pain </h3> 
+      </div>
+     </div>
+  
+  
+</div>
+ <div class="owl-carousel">
+    <div>
+      <div class="itemImg">
+        <a href="#">  <img src="image/movies/movies24.jpg" class="w-100" alt=""></a>
+      </div>
+      <div class="details">
+          <div class="age">TV-G </div>
+         <div class="name">Romance</div>
+         <h3>Future Hell</h3> 
+      </div>
+     </div>
+     <div>
+        <div class="itemImg">
+          <a href="#">  <img src="image/movies/movies25.jpg" class="w-100" alt=""></a>
+        </div>
+        <div class="details">
+            <div class="age">TV-G </div>
+           <div class="name">War</div>
+           <h3>Soviet : The Cold War</h3> 
+        </div>
+       </div>
+       <div>
+        <div class="itemImg">
+          <a href="#">  <img src="image/movies/movies26.jpg" class="w-100" alt=""></a>
+        </div>
+        <div class="details">
+            <div class="age">TV-G </div>
+           <div class="name">Drama</div>
+           <h3>  Toto Family  </h3> 
+        </div>
+       </div>
+       <div>
+        <div class="itemImg">
+          <a href="#">  <img src="image/movies/movies27.jpg" class="w-100" alt=""></a>
+        </div>
+        <div class="details">
+            <div class="age">TV-G </div>
+           <div class="name">Crime</div>
+           <h3> Finding Love of Life </h3> 
+        </div>
+       </div>
+       <div>
+        <div class="itemImg">
+          <a href="#">  <img src="image/movies/movies28.jpg" class="w-100" alt=""></a>
+        </div>
+        <div class="details">
+            <div class="age">TV-G </div>
+           <div class="name">Romance</div>
+           <h3>Future Hell</h3> 
+        </div>
+       </div>
+    
+       <div>
+        <div class="itemImg">
+          <a href="#">  <img src="image/movies/movies29.jpg" class="w-100" alt=""></a>
+        </div>
+        <div class="details">
+            <div class="age">TV-G </div>
+           <div class="name">Horror</div>
+           <h3> Green Magic World </h3> 
+        </div>
+       </div>
+    
+    
+  </div>
+  
+  <a href="#" class="btn custom-button"> BROWSE ALL MOVIES</a>
+
+  <div class="padding-top">
+    <div class="text-center mb-3 text-light">
+        <span>ONLINE STREAMING</span>
+        <h2>Listen Audiobooks </h2>
+     </div>
+  </div>
+  <div class="row py-4 g-3 audios">
+    <div class="col-lg-2 col-6">
+            <div class="itemImg">
+              <a href="#">  <img src="image/audio/audiobook10.jpeg" class="w-100" alt=""></a>
+            </div>
+            <div class="details">
+              <div class="d-flex justify-content-between">
+                <div class="age">18+ </div>
+                <div class="text-light">2021</div>
+              </div>
+               <h3>Becoming</h3> 
+           </div>  
+    </div>
+    <div class="col-lg-2 col-6">
+        <div class="itemImg">
+          <a href="#">  <img src="image/audio/audiobook11.jpeg" class="w-100" alt=""></a>
+        </div>
+        <div class="details">
+          <div class="d-flex justify-content-between">
+            <div class="age">18+ </div>
+            <div class="text-light">2021</div>
+          </div>
+           <h3>Cleaning Up Your Mental Mess</h3> 
+       </div>  
+</div>
+<div class="col-lg-2 col-6">
+    <div class="itemImg">
+      <a href="#">  <img src="image/audio/audiobook12.jpeg" class="w-100" alt=""></a>
+    </div>
+    <div class="details">
+      <div class="d-flex justify-content-between">
+        <div class="age">18+ </div>
+        <div class="text-light">2021</div>
+      </div>
+       <h3>Becoming</h3> 
+   </div>  
+</div>
+<div class="col-lg-2 col-6">
+    <div class="itemImg">
+      <a href="#">  <img src="image/audio/audiobook14.jpeg" class="w-100" alt=""></a>
+    </div>
+    <div class="details">
+      <div class="d-flex justify-content-between">
+        <div class="age">14+ </div>
+        <div class="text-light">2021</div>
+      </div>
+       <h3>Wild Sign</h3> 
+   </div>  
+</div>
+<div class="col-lg-2 col-6">
+    <div class="itemImg">
+      <a href="#">  <img src="image/audio/audiobook13.jpeg" class="w-100" alt=""></a>
+    </div>
+    <div class="details">
+      <div class="d-flex justify-content-between">
+        <div class="age">18+ </div>
+        <div class="text-light">2021</div>
+      </div>
+       <h3>Just As I Am: A Memoir</h3> 
+   </div>  
+</div>
+<div class="col-lg-2 col-6">
+    <div class="itemImg">
+      <a href="#">  <img src="image/audio/audiobook15.jpeg" class="w-100" alt=""></a>
+    </div>
+    <div class="details">
+      <div class="d-flex justify-content-between">
+        <div class="age">18+ </div>
+        <div class="text-light">2021</div>
+      </div>
+       <h3>To Kill a Fae</h3> 
+   </div>  
+</div>
+  </div>
+  <a href="#" class="btn custom-button">  BROWSE ALL AUDIOBOOKS </a>
+</section>
+</main>
+<!-- End Section Part-4 ==================-->
+<!-- Start Section part-5 ================-->
+<main class="py-4">
+ <section class="container testimonial">
+  <div class="row">
+    <div class="col-md-6 vc-content pt-5">
+       <h3>Trusted by tech experts and real users
+      </h3>
+      <p>
+        “ As VPN services go, it's hard to beat NordVPN. It has a large and diverse collection of servers, an excellent collection of advanced features, strong privacy and security”
+      </p> 
+      <figure>
+        <img src="image/testimonial/avatar01.jpg" alt="Max Eddy">
+        <img src="image/testimonial/brand01.jpg" alt="Max Eddy">
+       </figure>
+       <h6>Max Eddy <br>
+        <small>Software analyst, PCMag</small> 
+       </h6>
+    </div>
+    <div class="col-md-6 d-none d-lg-block">
+        <div class="wpb_wrapper text-center">
+            <img src="image/testimonial/side-image02.png" class="w-75" alt="">
+        </div> 
+    </div>
+  </div>
+ </section>   
+</main>
+<!-- End Section part-5 =================-->
+<!-- Start Section Part 6 ===============-->
+<main class="video-bg">
+  <section class="container ">
+        <div class="text-center py-5 text-light">
+            <span>ONLINE STREAMING</span>
+            <h3 class="ml3">Ready to Grab the Deal? </h3>
+            
+         </div>
+   <div class="row g-4">
+    <div class="col-md-6 col-lg-4">
+        <div class=" price-box ">
+            <figure class="icon"><img src="image/logo/icon04.png" style="width: 40px ;"></figure>
+          <div class="months">1-month plan</div>
+          <div class="price"><span>$</span> <b>9.99</b> <small>per month</small> </div>
+          <a href="#">GET THE DEAL</a>
+          <div class="guarantee"> 30-days money-back guarantee</div>
+        </div>
+    </div>
+    <div class="col-lg-4 d-none d-lg-block ">
+        <div class=" price-box ">
+            <figure class="icon"><img src="image/logo/icon04.png" style="width: 40px ;"></figure>
+          <div class="months">12-month plan</div>
+          <div class="price"><span>$</span> <b>3.99</b> <small>per month</small> </div>
+          <div class="save">Save 68%</div>
+          <div class="note"><u>$286.80</u> $89.00 for the first 2 years</div>
+          <a href="#">GET THE DEAL</a>
+          <div class="guarantee"> 30-days money-back guarantee</div>
+        </div>
+    </div>
+    <div class="col-md-6 col-lg-4">
+        <div class=" price-box ">
+            <figure class="icon"><img src="image/logo/icon04.png" style="width: 40px ;"></figure>
+          <div class="months">6-month plan</div>
+          <div class="price"><span>$</span> <b>6.99</b> <small>per month</small> </div>
+          <a href="#">GET THE DEAL</a>
+          <div class="guarantee"> 30-days money-back guarantee</div>
+        </div>
+    </div>
+   </div>
+  </section>  
+</main>
+<!-- End Section Part 6 ===============-->
+<!-- Start Section Part-7 =============-->
+<section class="vc-container ">
+  <div class="text-center text-light container">
+    <h3>Start for your first 30 days. </h3>
+    <p>Ready to watch? Enter your email to create or restart your membership.</p>
+    <div class="form">
+        <input type="email" placeholder="Type your e-mail address">
+        <input type="submit" value="GET STARTED">
+    </div>
+  </div>
+</section>
+<!-- End Section Part-7 =============-->
+<!-- Start Section Footer ==========-->
+<footer>
+  <section class="container">
+   <div class="row">
+    <div class="col-md-6 col-lg-3">
+        <div class="textwidget custom-html-widget">
+            <h5 class="call-us">Questions? <strong>Call 0850-380-6444</strong></h5>
+            <p> Format for custom post types that are not book
+              or you can use else if to <u>specify a second</u> post type the
+              same way as above. </p>
+            <div class="language">
+              <select>
+                <option>English</option>
+                <option>Spanish</option>
+              </select>
+            </div>
+            <!-- end language --> 
+  </div>  
+    </div>
+    <div class="col-md-6 col-lg-3">
+        <div class="widget footer-widget">
+            <h6 class="widget-title">DIGIFLEX</h6>
+            <div class="menu-digiflex-container">
+            <ul  class="menu">
+            <li class="menu-item "><a href="#">Digiflex</a></li>
+            <li class="menu-item "><a href="#">Devices</a></li>
+            <li class="menu-item "><a href="#">Blog</a></li>
+            <li class="menu-item "><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    </div>
+    <div class="col-md-6 col-lg-3">
+        <div class="widget footer-widget">
+            <h6 class="widget-title">SUPPORT</h6>
+            <div class="menu-digiflex-container">
+            <ul  class="menu">
+            <li class="menu-item "><a href="#">FAQ</a></li>
+            <li class="menu-item "><a href="#">Help Center</a></li>
+            <li class="menu-item "><a href="#">Support </a></li>
+            <li class="menu-item "><a href="#">Account</a></li>
+            </ul>
+        </div>
+    </div>
+    </div>
+    <div class="col-md-6 col-lg-3">
+        <div class="widget footer-widget">
+            <h6 class="widget-title">POLICIES</h6>
+            <div class="menu-digiflex-container">
+            <ul  class="menu">
+            <li class="menu-item "><a href="#">Privacy Policy</a></li>
+            <li class="menu-item "><a href="#">Terms of Use</a></li>
+            <li class="menu-item "><a href="#">Legal Noticies </a></li>
+            </ul>
+        </div>
+    </div>
+    </div>
+   </div>
+  </section> 
+  <div class="bottom-bar">
+	<div class="container">
+         <span>© 2021 Digiflex | Online Movie Streaming</span> 
+			<span> Site created by Alaa Shaban</span> 
+		</div>
+	</div> 
+</footer>
+<!-- End Section Footer ============-->
+  <!-- Installation Script File -->
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/bootstrap.bundle.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/particles.js"></script>
+  <script src="js/particles.json"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+  <script src="js/main.js"></script>
+
+
+</body>
+</html>
